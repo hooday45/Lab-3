@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Product Catalogue</title>
+    </head>
+
+    <body>
+        <script src="../js/main.js"></script>
+
+        <div class="banner">Welcome to the Tech Wizard Store!</div>
+
+        <div class="product-container">
+            <div class="product" data-product-name="Apple MacBook Pro">
+                <h2>Apple MacBook Pro</h2>
+                <img src="../img/appleMacBookPro.jpg" alt="Apple MacBook Pro">
+                <p>Price: $1,299</p>
+                <button onclick="addToCart('Apple MacBook Pro')">Add to Cart</button>
+            </div>
+
+            <div class="product" data-product-name="Google Pixelbook Go">
+                <h2>Google Pixelbook Go</h2>
+                <img src="../img/googlePixelbookGo.jpeg" alt="Google Pixelbook Go">
+                <p>Price: $649</p>
+                <button onclick="addToCart('Google Pixelbook Go')">Add to Cart</button>
+            </div>
+
+            <div class="product" data-product-name="Microsoft Surface Laptop 4">
+                <h2>Microsoft Surface Laptop 4</h2>
+                <img src="../img/microsoftSurfaceLaptop4.jpeg" alt="Microsoft Surface Laptop 4">
+                <p>Price: $999</p>
+                <button onclick="addToCart('Microsoft Surface Laptop 4')">Add to Cart</button>
+            </div>
+
+            <div class="product" data-product-name="Samsung Galaxy Tab S7">
+                <h2>Samsung Galaxy Tab S7</h2>
+                <img src="../img/samsungGalaxyTabS7.jpeg" alt="Samsung Galaxy Tab S7">
+                <p>Price: $549</p>
+                <button onclick="addToCart('Samsung Galaxy Tab S7')">Add to Cart</button>
+            </div>
+
+            <div class="product" data-product-name="Sony WH-1000XM4 Headphones">
+                <h2>Sony WH-1000XM4 Headphones</h2>
+                <img src="../img/sonyWH-1000XM4Headphones.jpeg" alt="Sony WH-1000XM4 Headphones">
+                <p>Price: $349</p>
+                <button onclick="addToCart('Sony WH-1000XM4 Headphones')">Add to Cart</button>
+            </div>
+            
+            <div class="product" data-product-name="Amazon Echo Show 8">
+                <h2>Amazon Echo Show 8</h2>
+                <img src="../img/amazonEchoShow8.jpeg" alt="Amazon Echo Show 8">
+                <p>Price: $129</p>
+                <button onclick="addToCart('Amazon Echo Show 8')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="cart" onclick="toggleCartVisibility()">
+            🛒 My Cart
+        </div>
+
+        <div id="cart-items" class="cart-items hidden">
+            <h3>Cart</h3>
+            <ul id="cart-list"></ul>
+        </div>
+    </body>
+</html>
